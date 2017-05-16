@@ -1,0 +1,33 @@
+---
+mcollective_agent_puppet::config_name: puppet
+mcollective_agent_puppet::common_files:
+- mcollective_puppet_agent/data/puppet_data.rb
+- mcollective_puppet_agent/data/puppet_data.ddl
+- mcollective_puppet_agent/data/resource_data.rb
+- mcollective_puppet_agent/data/resource_data.ddl
+- mcollective_puppet_agent/util/puppetrunner.rb
+- mcollective_puppet_agent/util/puppet_agent_mgr/mgr_v2.rb
+- mcollective_puppet_agent/util/puppet_agent_mgr/mgr_windows.rb
+- mcollective_puppet_agent/util/puppet_agent_mgr/mgr_v3.rb
+- mcollective_puppet_agent/util/puppet_server_address_validation.rb
+- mcollective_puppet_agent/util/puppet_agent_mgr.rb
+- mcollective_puppet_agent/validator/puppet_tags_validator.rb
+- mcollective_puppet_agent/validator/puppet_tags_validator.ddl
+- mcollective_puppet_agent/validator/puppet_variable_validator.rb
+- mcollective_puppet_agent/validator/puppet_resource_validator.rb
+- mcollective_puppet_agent/validator/puppet_variable_validator.ddl
+- mcollective_puppet_agent/validator/puppet_resource_validator.ddl
+- mcollective_puppet_agent/validator/puppet_server_address_validator.ddl
+- mcollective_puppet_agent/validator/puppet_server_address_validator.rb
+- mcollective_puppet_agent/agent/puppet.ddl
+mcollective_agent_puppet::common_directories:
+- mcollective_puppet_agent/util/puppet_agent_mgr
+mcollective_agent_puppet::server_files:
+- mcollective_puppet_agent/agent/puppet.rb
+mcollective_agent_puppet::server_directories: []
+mcollective_agent_puppet::client_files:
+- mcollective_puppet_agent/application/puppet.rb
+- mcollective_puppet_agent/aggregate/boolean_summary.ddl
+- mcollective_puppet_agent/aggregate/boolean_summary.rb
+mcollective_agent_puppet::client_directories: []
+
